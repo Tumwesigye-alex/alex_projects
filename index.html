@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyForm</title>
+	<style type="text/css">
+		/* style inputs, select and textareas*/
+		input[type=text],select,textarea{
+			width: 100%;
+			padding: 12px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			resize: vertical;
+		}
+		/* styling the label to display next to the inputs*/
+		label{
+			padding: 12px 12px 12px 0;
+			display: inline-block;
+		}
+		/* styling the container*/
+		.container{
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+			margin-left: 20%;
+			margin-right: 20%;
+		}
+		/*Styling the  submit button*/
+		input[type=submit]{
+			background-color: green;
+			float: left;
+
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+
+		}
+		/* floating column for labels: 25% width*/
+		.col-25{
+			float: left;
+			width: 75%;
+			margin-top: 6px;
+		}
+		/*floating column for inputs: 75% width*/
+		.col-75{
+			float: left;
+			width: 75%;
+			margin-top: 6px;
+		}
+		/*clear floats after the columns*/
+		.row:after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		@media scrren (max-width: 600px){
+			.col-25, .col-75,input[type=submit]{
+				width: 100%;
+				margin-top: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form name="myform" action="">
+			<div class="row">
+				<div class="col-75">
+			<label>First Name</label>
+			<input type="text" name="fname" placeholder="first name">
+		</div>
+	</div>
+	<div class="row">
+				<div class="col-25">
+			<label>Last Name</label>
+			<input type="text" name="lname" placeholder="Last name">
+		</div>
+	</div>
+	<div class="row">
+				<div class="col-75">
+			<label>Country</label>
+			<select name="Country" id="Country">
+				<option value="Canada">Canada</option>
+				<option value="Uganda">Uganda</option>
+				<option value="USA">USA</option>
+			</select>
+		</div>
+	</div>
+			<div class="row">
+				<div class="col-25">
+			<label name="subject" id="subject">Subject</label>
+			<textarea name="subject" placeholder="Write something......." style="height: 200px"></textarea>
+		</div>
+	</div>
+	<div class="row">
+		<input type="submit" name="submit" placeholder="submit">
+	</div>
+		</form>
+	</div>
+
+</body>
+</html>
