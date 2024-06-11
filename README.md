@@ -1,0 +1,3 @@
+I am a talented and self committed person willing to learn new things, co-operate with others in teams to work on projects, researching about new things that I dont know and driven by sucess.
+I have succeeded in numerous projects and my commitment helps to work dynamically with various basic skills in programming languages like Java, Python, HTML, Javascript, PHP, CSS, C programming.
+Other Skills that I have include Systems Administration, Cloud computing, Network Administration, I have goood teaching skills, I have knowledge in computer Systems and Operating Systems, repair and maintenance among others.
